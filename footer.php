@@ -24,7 +24,7 @@
 							<?php wp_nav_menu( array('container' => 'div','theme_location' => 'bottom_nav',"depth"=>1  ) ); ?>
 						</ul>
 						<p class="copyr">&copy;<?php echo date("Y"); ?> <?php bloginfo('name'); ?>. 
-						<a href="http://themeisle.com/themes/creativemag/?utm_source=themefooter&utm_medium=logo&utm_campaign=themefooter" target="_blank">CreativeMag</a><?php _e(' powered by ','cwp'); ?><a href="http://wordpress.org/" target="_blank"><?php _e('WordPress','cwp'); ?></a>
+						<a href="http://themeisle.com/themes/creativemag/?utm_source=creativemag&utm_medium=link&utm_campaign=themefooter" target="_blank">CreativeMag</a><?php _e(' powered by ','cwp'); ?><a href="http://wordpress.org/" target="_blank"><?php _e('WordPress','cwp'); ?></a>
 						</p>
 						</div>
 					</div>
