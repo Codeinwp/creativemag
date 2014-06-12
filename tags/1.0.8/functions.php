@@ -82,9 +82,6 @@ function creativemag_scripts() {
 	wp_enqueue_script( 'CreativeMag-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 	
 	wp_enqueue_script( 'CreativeMag-menu', get_template_directory_uri() . '/js/menu.js', array('jquery'), '20130115', true );
-	
-	wp_enqueue_script( 'CreativeMag-customscript', get_template_directory_uri() . '/js/custom-script.js', array('jquery'), '20130115', true );
-	
 	wp_enqueue_script( 'CreativeMag-main-jquery', get_template_directory_uri() . '/js/jquery-main.js', array('jquery'), '20130115', true );
 	
 	wp_enqueue_script( 'CreativeMag-grid-list', get_template_directory_uri() . '/js/grid-list.js', array('jquery'), '20130115', true );
