@@ -1,13 +1,14 @@
 /*
+/*
 Theme Name: CreativeMag
 Theme URI: http://themeisle.com/themes/creativemag/
 Description: CreativeMag is a colorful WordPress Theme made for people who want to add some color to their blog.Along with the elegant design the theme is easily customizable with numerous theme options, for example you will be able to easily edit logo, menus, social profiles links and banners. You can find more details about configuration on the demo website : creativemag.codeinwp.com .
-License: GNU General Public License v2
+License: GNU General Public License v3
 License URI: license.txt
 Author: codeinwp
 Author URI: Codeinwp.com
 Tags: blue,white,yellow,light,one-column, two-columns, fixed-width , custom-menu, theme-options, featured-images, right-sidebar,custom-background,custom-menu,editor-style,full-width-template,sticky-post,translation-ready
-Version: 1.0.10
+Version: 1.1
 /* =Reset
 -------------------------------------------------------------- */
 html, body, div, span, applet, object, iframe,
@@ -751,6 +752,16 @@ ul { list-style: none }
     background: url(images/sprite.png) no-repeat -290px -30px;
     width: 26px;
     height: 25px;
+}
+.social a.gplus{ 
+    background: url(images/gplus.png) no-repeat;
+    width: 24px;
+    height: 24px;
+}
+.social a.pinterest{ 
+    background: url(images/pinterest.png) no-repeat;
+    width: 24px;
+    height: 24px;
 }
 .social .facebook { background-position: -323px -30px }
 .social .rss { background-position: -353px -30px }
@@ -1636,7 +1647,17 @@ overflow:hidden;
     color: #7d9198;
     font-size: 12px;
 } 
-#btn-leave-comment{
+div.wpcf7{
+	 
+background: #f1f1f1;
+padding:20px;
+}
+div.wpcf7-response-output{
+	border:none;
+	
+background: #E3EDF4;
+}
+#btn-leave-comment, .wpcf7 .wpcf7-submit,.wpcf7 .wpcf7-submit:hover{
     background-color: #e3edf4;
     border: 1px solid #7ab7e0 !important;
     width: 160px;
@@ -2906,6 +2927,15 @@ font-weight: bold;
 }
 
 
-
+.contact-page h2.title-post span{
+	margin-left:0px;
+	padding-left:0px;
+}
+.contact-page h2.title-post{
+	background:none;
+	margin:30px;
+	margin-left:0px;
+	font-size:40px;
+}
 
 

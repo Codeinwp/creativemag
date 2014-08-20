@@ -38,6 +38,22 @@
 									"id"=>"CMlogof", 
 									"default"=>get_template_directory_uri()."/images/conceptdesign-logo.png"
 								),
+								array(
+									
+									"type"=>"textarea_disabled",
+									"name"=>"Custom javascript",
+									"description"=>"Available in the PRO version",
+									"id"=>"CMjs", 
+									"default"=>""
+								),
+								array(
+									
+									"type"=>"textarea_disabled",
+									"name"=>"Custom CSS",
+									"description"=>"Available in the PRO version",
+									"id"=>"CMcss", 
+									"default"=>""
+								),
 							)
 						),array(
 							"type"=>"tab",
@@ -62,6 +78,20 @@
 									"name"=>"RSS",
 									"description"=>"Url of rss feed",
 									"id"=>"CMrss",
+									"default"=>""
+								), 
+								array(
+									"type"=>"input_text_disabled",
+									"name"=>"GooglePlus",
+									"description"=>"Available in the PRO version",
+									"id"=>"CMgplus",
+									"default"=>""
+								), 
+								array(
+									"type"=>"input_text_disabled",
+									"name"=>"Pinterest",
+									"description"=>"Available in the PRO version",
+									"id"=>"CMpinterest",
 									"default"=>""
 								) 
 							)
