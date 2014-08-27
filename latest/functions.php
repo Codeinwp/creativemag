@@ -11,7 +11,7 @@ function creativemag_setup() {
 	 */
 	require( get_template_directory() . '/inc/template-tags.php' );
 	require( get_template_directory() . '/admin/functions.php' ); 
- 
+  
 	load_theme_textdomain( 'creativeMag', get_template_directory() . '/languages' );
 	/**
 	 * Add default posts and comments RSS feed links to head
@@ -51,9 +51,35 @@ function creativemag_setup() {
 	include_once(get_template_directory().'/widgets/aboutme.php');
 	include_once(get_template_directory().'/widgets/tabs-area.php');
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+	
 } 
 add_action( 'after_setup_theme', 'creativemag_setup' );
-  
+
+add_action('admin_notices', 'creativemag_admin_notice');
+ 
+function creativemag_admin_notice() { 
+    global $current_user ; 
+        $user_id = $current_user->ID; 
+    if ( ! get_user_meta($user_id, 'creativemag_ignore_notice') ) { 
+        echo '<div class="updated"><p>'; 
+        printf(__('We just released a pro version. Make sure you <a href="https://themeisle.com/themes/creativemag-pro/?r=wporg"> check it out</a> !  | <a href="%1$s">Hide Notice</a>'), '?example_nag_ignore=0'); 
+        echo "</p></div>"; 
+    } 
+} 
+add_action('admin_init', 'creativemag_nag_ignore');
+
+function creativemag_nag_ignore() {
+ 
+    global $current_user;
+ 
+        $user_id = $current_user->ID;
+ 
+        if ( isset($_GET['creativemag_nag_ignore']) && '0' == $_GET['creativemag_nag_ignore'] ) {
+ 
+             add_user_meta($user_id, 'creativemag_ignore_notice', 'true', true); 
+    } 
+}
+   
 function creativemag_widgets_init() {
 	 
 	register_sidebar(array(
@@ -82,12 +108,10 @@ function creativemag_scripts() {
 	wp_enqueue_script( 'CreativeMag-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 	
 	wp_enqueue_script( 'CreativeMag-menu', get_template_directory_uri() . '/js/menu.js', array('jquery'), '20130115', true );
-	
-	wp_enqueue_script( 'CreativeMag-customscript', get_template_directory_uri() . '/js/custom-script.js', array('jquery'), '20130115', true );
-	
 	wp_enqueue_script( 'CreativeMag-main-jquery', get_template_directory_uri() . '/js/jquery-main.js', array('jquery'), '20130115', true );
 	
 	wp_enqueue_script( 'CreativeMag-grid-list', get_template_directory_uri() . '/js/grid-list.js', array('jquery'), '20130115', true );
+	wp_enqueue_script( 'CreativeMag-customscript', get_template_directory_uri() . '/js/custom-script.js', array('jquery'), '20130115', true );
 	
 	wp_enqueue_script( 'CreativeMag-viewmore', get_template_directory_uri() . '/js/viewmore.js', array('jquery'), '20130115', true );
 	

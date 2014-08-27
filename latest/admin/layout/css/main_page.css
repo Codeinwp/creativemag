@@ -23,10 +23,7 @@
 }
 #cwp_container #header .logo {
 	float: left;
-	margin:20px 20px;
-	background:url(../img/logo-themeisle.png) no-repeat;
-	width:200px;
-	height:37px;
+	margin:10px 20px;
 }
 #cwp_container #js-warning {
     color: red;
@@ -525,10 +522,6 @@ margin:4px 0 4px;
 }
 
 
-#cwp_container .button_top {
-	margin-top:30px;
-}
-
 #cwp_container .button:hover,#cwp_container .button_hover {
 border-color: #bbb;
 color: #464646;
@@ -1013,4 +1006,15 @@ border-radius: 3px;
 }
 .spinner-reset{
 	float:left;
+}
+
+.theme_options_logo{
+margin-top: -5px;
+margin-right: 20px;
+}
+.field_disabled input, .field_disabled textarea{
+	cursor:not-allowed;
+}
+.field_disabled .field_description{
+	color:red;
 }

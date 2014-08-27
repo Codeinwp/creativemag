@@ -8,11 +8,20 @@
 	<?php settings_fields( cwp_config("menu_slug")); ?>
  
 		<div id="header">
+		
 			<div class="logo ">
+				<h2> 
+ 
+				<img class="theme_options_logo" src="<?php echo get_stylesheet_directory_uri() ?>/images/logo.png" alt="Reviewgine Theme Options">
+				<a href="https://themeisle.com/documentation-creativemag" class="read_docs button" target="_blank" style="text-decoration: none;">Read online documentation</a>
+				
+				<a href="https://themeisle.com/themes/creativemag-pro/?r=wporg" class="read_docs button" target="_blank" style="color:red; text-decoration: none; ">Buy PRO Version</a>
+				
+				</h2> 
 			</div>
-			<a href="http://themeisle.com/contact/" class="button button_top" target="_blank"><?php _e('Contact us','cwp'); ?></a>
-			<a href="http://themeisle.com/about-us/" class="button button_top" target="_blank"><?php _e('About us','cwp'); ?></a>
+		  
 			<div class="clear"></div>
+		
     	</div>
 
 		<div id="info_bar">

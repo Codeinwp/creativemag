@@ -4,10 +4,10 @@ jQuery("document").ready(function() {
 
 	jQuery("#cwp_container").fadeIn(200);
 	
+	console.log(wp.media);
     var _custom_media = true,
 
       _orig_send_attachment = wp.media.editor.send.attachment;
-
 
 
   jQuery('.clear-image').click(function(e) {

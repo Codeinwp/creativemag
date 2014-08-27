@@ -1,6 +1,6 @@
 = CreativeMag =
 
-Author: codeinwp
+Author: themeisle
 
 Tags: blue,white,yellow,light,one-column, two-columns, fixed-width , custom-menu, theme-options, featured-images, right-sidebar,custom-background,custom-menu,editor-style,full-width-template,sticky-post,translation-ready
 
