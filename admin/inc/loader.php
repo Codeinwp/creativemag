@@ -240,6 +240,7 @@ function cwp_check_element($field,$tab){
 }
 function cwp_check_config(){
 	$errors = array();
+	$config = cwpConfig::init();
 	$config = cwpConfig::$structure;
 	$tab_fields  = array("type","name","options");
 	$titles = array("name","type");
@@ -385,6 +386,7 @@ function cwp($name = ''){
 }
 
 add_action( 'admin_enqueue_scripts', 'cwp_top_custom_wp_admin_script'); 
-function cwp_top_custom_wp_admin_script(){
-	 wp_enqueue_media();
+function cwp_top_custom_wp_admin_script($hook){
+	 if($hook == "appearance_page_theme_options")
+			wp_enqueue_media();
 }
