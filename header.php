@@ -60,7 +60,7 @@
                     <?php wp_nav_menu( array('container' => 'div', 'container_class' => 'menu-wrapper', 'menu' => 'header-menu', 'container_id' => 'main-superfish-wrapper', 'menu_id' => 'nav','menu_class'=> 'sf-menu', 'theme_location' => 'drop_nav'  ,'depth'=>2) ); ?>
 				</nav>
 					
-					<a href="<?php echo home_url(); ?> " class="home">Home</a>
+					<a href="<?php echo home_url(); ?> " class="home"><?php _e('Home','creativeMag'); ?></a>
 				
 					
 				</div>

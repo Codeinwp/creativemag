@@ -1,12 +1,12 @@
 = CreativeMag =
 
-Author: themeisle
+Author: codeinwp
 
 Tags: blue,white,yellow,light,one-column, two-columns, fixed-width , custom-menu, theme-options, featured-images, right-sidebar,custom-background,custom-menu,editor-style,full-width-template,sticky-post,translation-ready
 
 Requires at least:	3.3.0
 
-Tested up to:		3.8
+Tested up to:		4.0
 
 CreativeMag
 
@@ -30,6 +30,6 @@ http://www.icanbecreative.com/creativemag-free-wordpress-theme.html
 
 = License =
 
-Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License v2.
+Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License v3.
 
 The theme uses a custom version of  Feedburner Email widget - http://wordpress.org/plugins/feedburner-email-widget/ (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html) 

@@ -8,7 +8,9 @@ License URI: license.txt
 Author: codeinwp
 Author URI: Codeinwp.com
 Tags: blue,white,yellow,light,one-column, two-columns, fixed-width , custom-menu, theme-options, featured-images, right-sidebar,custom-background,custom-menu,editor-style,full-width-template,sticky-post,translation-ready
-Version: 1.1
+Text Domain: creativeMag
+Domain Path: /languages
+Version: 1.2
 /* =Reset
 -------------------------------------------------------------- */
 html, body, div, span, applet, object, iframe,
@@ -1750,8 +1752,8 @@ border-color:none;
 .post-body p { margin-bottom: 1.625em }
 .post-body li,
 .post-body ul { list-style: inherit }
-.post-body ul,
-ol { margin: 0 0 1.625em 1em }
+.post-body ul{ margin: 0 0 1.625em 1em }
+.post-body ol { margin: 0 0 1.625em 2.5em }
 .post-body ul { list-style: square }
 .post-body ul li {
     list-style: none;
