@@ -1,5 +1,13 @@
 
 
+### 1.9.5 - 29/09/2014
+
+ Changes: 
+
+
+ * Update style.css
+
+
 ### 1.9.2 - 29/09/2014
 
  Changes: 
