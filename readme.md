@@ -30,4 +30,4 @@ http://www.icanbecreative.com/creativemag-free-wordpress-theme.html
 
 Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License v3.
 
-The theme uses a custom version of  Feedburner Email widget - http://wordpress.org/plugins/feedburner-email-widget/ (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html) 
+* The theme uses a custom version of  Feedburner Email widget - http://wordpress.org/plugins/feedburner-email-widget/ (http://www.gnu.org/licenses/old-licenses/gpl-2.0.html) 
