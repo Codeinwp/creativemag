@@ -1,5 +1,15 @@
 
 
+### 2.0 - 29/12/2014
+
+ Changes: 
+
+
+ * Merge pull request #28 from Codeinwp/production
+
+sync
+
+
 ### 1.9.9.1 - 17/10/2014
 
  Changes: 
