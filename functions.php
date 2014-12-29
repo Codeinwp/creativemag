@@ -29,11 +29,9 @@ function creativemag_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => get_template_directory_uri() . '/images/bg-page.gif',
 	);
-	if ( version_compare( $wp_version, '3.4', '>=' ) ) :
-		add_theme_support( 'custom-background',$args ); 
-	else :
-		add_custom_background( $args );
-	endif;
+	
+	add_theme_support( 'custom-background',$args ); 
+
 	/**
 	 * This theme uses wp_nav_menu() in one location.
 	 */
