@@ -32,7 +32,7 @@
 									echo $creativemag_options['CMlogo'];
 										?>" /></a>  
 						<?php else :  ?>
-							<a href="<?php echo get_site_url(); ?>"><img class="special" src="<?php bloginfo("template_directory"); ?>/images/conceptdesign-logo.png" /></a>  
+							<a href="<?php echo get_site_url(); ?>"><img class="special" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/conceptdesign-logo.png" /></a>  
 						<?php endif; ?> 
                     </h1>
                     

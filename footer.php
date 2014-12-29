@@ -17,7 +17,7 @@
 										echo $creativemag_options['CMlogof'];
 										?>" /></a>  
 								<?php else: ?>
-									<a href="<?php echo get_site_url(); ?>"><img class="special" src="<?php bloginfo("template_directory"); ?>/images/conceptdesign-logo.png" /></a>  
+									<a href="<?php echo get_site_url(); ?>"><img class="special" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/conceptdesign-logo.png" /></a>  
 								<?php endif; ?> 
 						</strong> 
 						<ul>
@@ -27,7 +27,7 @@
 						<?php 
 						_e('Theme developed by', 'creativeMag');
 						?>
-						<a href="http://themeisle.com/themes/creativemag/?utm_source=themefooter&utm_medium=logo&utm_campaign=themefooter" target="_blank">ThemeIsle</a><?php _e(' powered by ','cwp'); ?><a href="http://wordpress.org/" target="_blank"><?php _e('WordPress','cwp'); ?></a>
+						<a href="https://themeisle.com/themes/creativemag/" target="_blank">ThemeIsle</a><?php _e(' powered by ','creativeMag'); ?><a href="http://wordpress.org/" target="_blank"><?php _e('WordPress','creativeMag'); ?></a>
 						</p>
 						</div>
 					</div>
